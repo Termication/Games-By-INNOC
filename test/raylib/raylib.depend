@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1706969544 source:/home/innocent/Documents/GAME/Games-By-INNOC/test/raylib/main.c
+	"raylib.h"
+	<math.h>
+
