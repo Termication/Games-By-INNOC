@@ -7,7 +7,7 @@
 
 int main() {
     // Initialization
-    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "KayBee Bouncing Ball");
+    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "INN. Bouncing Ball");
     SetTargetFPS(60);
 
     // Ball properties
