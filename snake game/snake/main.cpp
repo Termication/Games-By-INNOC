@@ -1,9 +1,8 @@
-#include <iostream>
+#include "snake_game.h"
 
-using namespace std;
+int main() {
+    SnakeGame game;
+    game.Run();
 
-int main()
-{
-    cout << "Hello world!" << endl;
     return 0;
 }
