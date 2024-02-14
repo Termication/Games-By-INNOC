@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1707927755 source:/home/innocent/Documents/GAME/Games-By-INNOC/snake game/snake/main.cpp
+	<iostream>
+
+1707928265 source:/home/innocent/Documents/GAME/Games-By-INNOC/snake game/snake/snake_game.cpp
+	"snake_game.h"
+	<cstddef>
+
+1707928175 /home/innocent/Documents/GAME/Games-By-INNOC/snake game/snake/snake_game.h
+	"raylib.h"
+	<vector>
+
