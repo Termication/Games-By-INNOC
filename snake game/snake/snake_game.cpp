@@ -80,9 +80,27 @@ void SnakeGame::Draw() {
     DrawRectangle(food.x, food.y, GRID_SIZE, GRID_SIZE, RED);
 
     // Draw snake
-    for (const auto &segment : snake)
-        DrawRectangle(segment.x * GRID_SIZE, segment.y * GRID_SIZE, GRID_SIZE, GRID_SIZE, GREEN);
+    for (size_t i = 0; i < snake.size(); ++i) {
+        // Calculate snake segment position
+        float posX = snake[i].x * GRID_SIZE + GRID_SIZE / 2.0f;
+        float posY = snake[i].y * GRID_SIZE + GRID_SIZE / 2.0f;
+
+        // Calculate snake segment color
+        Color color;
+        if (i == 0) {
+            color = DARKGREEN;
+        } else {
+            color = GREEN;
+        }
+
+        // Draw snake segment
+        DrawRectangle(posX - GRID_SIZE / 2.0f, posY - GRID_SIZE / 2.0f, GRID_SIZE, GRID_SIZE, color);
+
+        // Draw border around snake segment
+        DrawRectangleLines(posX - GRID_SIZE / 2.0f, posY - GRID_SIZE / 2.0f, GRID_SIZE, GRID_SIZE, BLACK);
+    }
 
     EndDrawing();
 }
+
 

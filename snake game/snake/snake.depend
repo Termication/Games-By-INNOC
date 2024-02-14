@@ -1,6 +1,6 @@
 # depslib dependency file v1.0
-1707927755 source:/home/innocent/Documents/GAME/Games-By-INNOC/snake game/snake/main.cpp
-	<iostream>
+1707928410 source:/home/innocent/Documents/GAME/Games-By-INNOC/snake game/snake/main.cpp
+	"snake_game.h"
 
 1707928265 source:/home/innocent/Documents/GAME/Games-By-INNOC/snake game/snake/snake_game.cpp
 	"snake_game.h"
