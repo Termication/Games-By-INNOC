@@ -2,7 +2,7 @@
 #include <cstddef>
 
 SnakeGame::SnakeGame() {
-    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Snake Game");
+    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Snake source code by Inn.");
     SetTargetFPS(10);
 
     snake.push_back({SCREEN_WIDTH / (2 * GRID_SIZE), SCREEN_HEIGHT / (2 * GRID_SIZE)});
