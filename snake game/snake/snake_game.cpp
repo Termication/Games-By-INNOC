@@ -10,13 +10,13 @@ SnakeGame::SnakeGame() {
     food = {GetRandomValue(0, SCREEN_WIDTH / GRID_SIZE - 1) * GRID_SIZE,
             GetRandomValue(0, SCREEN_HEIGHT / GRID_SIZE - 1) * GRID_SIZE};
     gameOver = false;
+    score = 0;
 }
 
 void SnakeGame::Run() {
     while (!WindowShouldClose() && !gameOver) {
         Update();
-        Draw();
-    }
+        Draw();    }
 
     CloseWindow();
 }
@@ -70,6 +70,13 @@ void SnakeGame::Update() {
         food = {GetRandomValue(0, SCREEN_WIDTH / GRID_SIZE - 1) * GRID_SIZE,
                 GetRandomValue(0, SCREEN_HEIGHT / GRID_SIZE - 1) * GRID_SIZE};
     }
+        // Check collision with food
+    if (snake[0].x == food.x / GRID_SIZE && snake[0].y == food.y / GRID_SIZE) {
+        snake.push_back({food.x / GRID_SIZE, food.y / GRID_SIZE});
+        food = {GetRandomValue(0, SCREEN_WIDTH / GRID_SIZE - 1) * GRID_SIZE,
+                GetRandomValue(0, SCREEN_HEIGHT / GRID_SIZE - 1) * GRID_SIZE};
+        score++; // Increment score when the snake eats the food
+    }
 }
 
 void SnakeGame::Draw() {
@@ -78,6 +85,8 @@ void SnakeGame::Draw() {
 
     // Draw food
     DrawRectangle(food.x, food.y, GRID_SIZE, GRID_SIZE, RED);
+
+    //DrawText(FormatText("Score: %d", score), 10, 10, 20, BLACK);
 
     // Draw snake
     for (size_t i = 0; i < snake.size(); ++i) {
@@ -99,6 +108,7 @@ void SnakeGame::Draw() {
         // Draw border around snake segment
         DrawRectangleLines(posX - GRID_SIZE / 2.0f, posY - GRID_SIZE / 2.0f, GRID_SIZE, GRID_SIZE, BLACK);
     }
+
 
     EndDrawing();
 }

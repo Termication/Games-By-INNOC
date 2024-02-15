@@ -28,6 +28,7 @@ private:
     Direction direction;
     Vector2 food;
     bool gameOver;
+    int score;
 };
 
 #endif // SNAKE_GAME_H
