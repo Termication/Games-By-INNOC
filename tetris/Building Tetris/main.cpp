@@ -1,5 +1,7 @@
 #include <iostream>
 #include <raylib.h>
+#include "grid.h"
+
 
 using namespace std;
 
@@ -9,11 +11,15 @@ int main()
     InitWindow(300, 600, "Tetris By INN.");
     SetTargetFPS(60);
 
+    Grid grid = Grid();
+    grid.Print();
+
     while(WindowShouldClose() == false){
         BeginDrawing();
         ClearBackground(darkBlue);
 
         EndDrawing();
     }
+    CloseWindow();
 
 }

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1708188976 source:/home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building Tetris/main.cpp
+	<iostream>
+	<raylib.h>
+	"grid.h"
+
+1708188851 /home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building Tetris/grid.h
+
