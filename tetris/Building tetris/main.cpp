@@ -15,6 +15,7 @@ int main()
     grid.Print(); // Just for testing purposes
 
     ZBlock block = ZBlock();
+    block.Move(4, 3);
 
     while (!WindowShouldClose()) {
         BeginDrawing();
