@@ -1,6 +1,7 @@
 #include <iostream>
 #include <raylib.h>
 #include "grid.h"
+#include "blocks.cpp"
 
 using namespace std;
 
@@ -11,15 +12,15 @@ int main()
     SetTargetFPS(60);
 
     Grid grid; // Create a Grid object
-    grid.grid[0][0] = 1;
-    grid.grid[3][5] = 4;
-    grid.grid[17][8] = 7;
     grid.Print(); // Just for testing purposes
+
+    LBlock block = LBlock();
 
     while (!WindowShouldClose()) {
         BeginDrawing();
         ClearBackground(darkBlue);
         grid.Draw();
+        block.Draw();
 
         EndDrawing();
     }
