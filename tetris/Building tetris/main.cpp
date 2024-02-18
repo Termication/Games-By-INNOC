@@ -16,7 +16,7 @@ int main()
     while (!WindowShouldClose()) {
         BeginDrawing();
         ClearBackground(darkBlue);
-
+        grid.Draw();
 
         EndDrawing();
     }
