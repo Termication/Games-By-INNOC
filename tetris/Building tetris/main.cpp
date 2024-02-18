@@ -14,8 +14,7 @@ int main()
     Grid grid; // Create a Grid object
     grid.Print(); // Just for testing purposes
 
-    ZBlock block = ZBlock();
-    block.Move(4, 3);
+    OBlock block = OBlock();
 
     while (!WindowShouldClose()) {
         BeginDrawing();
