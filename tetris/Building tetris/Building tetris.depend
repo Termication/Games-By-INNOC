@@ -4,11 +4,23 @@
 	<raylib.h>
 	"grid.h"
 
-1708256387 /home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/grid.h
+1708259075 /home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/grid.h
 	<vector>
 	<raylib.h>
 
 1708257030 source:/home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/grid.cpp
 	"grid.h"
 	<iostream>
+
+1708258185 source:/home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/position.cpp
+	"position.h"
+
+1708258220 /home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/position.h
+
+1708258809 source:/home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/colors.cpp
+	"colors.h"
+
+1708258809 /home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/colors.h
+	<raylib.h>
+	<vector>
 
