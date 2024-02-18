@@ -8,6 +8,7 @@ Grid::Grid()
     numCols = 10;
     cellSize = 30;
     Initialize();
+    colors = GetCellColors();
 }
 
 void Grid::Initialize()
@@ -27,5 +28,15 @@ void Grid::Print(){
     }
 }
 std::vector<Color> Grid::GetCellColors(){
+    Color darkGrey = {26, 31, 40, 255};
+    Color green = {47, 230, 23, 255};
+    Color red = {231, 19, 19, 255};
+    Color orange = {226, 116, 18, 255};
+    Color yellow = {238, 235, 6, 255};
+    Color purple = {165, 1, 247, 255};
+    Color cyan = {21, 205, 210, 255};
+    Color blue = {14, 63, 216, 255};
+
+    return {darkGrey, green, red, orange, yellow, purple, cyan, blue};
 
 }
