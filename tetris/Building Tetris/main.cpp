@@ -2,7 +2,6 @@
 #include <raylib.h>
 #include "grid.h"
 
-
 using namespace std;
 
 int main()
@@ -11,15 +10,16 @@ int main()
     InitWindow(300, 600, "Tetris By INN.");
     SetTargetFPS(60);
 
-    Grid grid = Grid();
-    grid.Print();
+    Grid grid; // Create a Grid object
+    grid.Print(); // Just for testing purposes
 
-    while(WindowShouldClose() == false){
+    while (!WindowShouldClose()) {
         BeginDrawing();
         ClearBackground(darkBlue);
 
+
         EndDrawing();
     }
-    CloseWindow();
 
+    CloseWindow();
 }

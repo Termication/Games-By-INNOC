@@ -1,4 +1,3 @@
-
 #include "grid.h"
 #include <iostream>
 
@@ -13,7 +12,7 @@ Grid::Grid()
 void Grid::Initialize()
 {
     for(int row = 0; row < numRows; row++){
-        for(int column; column < numCols; column++){
+        for(int column = 0; column < numCols; column++){
             grid[row][column] = 0;
         }
     }
@@ -23,6 +22,6 @@ void Grid::Print(){
         for(int column = 0; column < numCols; column++){
         std::cout << grid[row][column] << " ";
         }
+        std::cout << std::endl;
     }
-
 }
