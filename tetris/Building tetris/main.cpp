@@ -34,6 +34,9 @@ int main()
         ClearBackground(darkBlue);
         DrawTextEx(font, "score", {365, 15}, 38, 2, WHITE);
         DrawTextEx(font, "next", {370, 175}, 38, 2, WHITE);
+        if(game.gameOver){
+            DrawTextEx(font, "game over", {320, 450}, 38, 2, WHITE);
+        }
         DrawRectangleRounded({320, 55, 170, 60}, 0.3, 6, lightBlue);
         DrawRectangleRounded({320, 215, 170, 180}, 0.3, 6, lightBlue);
         game.Draw();
