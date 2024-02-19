@@ -1,6 +1,7 @@
 #include <iostream>
 #include <raylib.h>
 #include "game.h"
+#include "colors.h"
 
 using namespace std;
 
@@ -17,11 +18,10 @@ bool EventTriggered(double interval){
 
 int main()
 {
-    Color darkBlue = {44, 44, 127, 255};
     InitWindow(500, 620, "Tetris By INN.");
     SetTargetFPS(60);
 
-    Font font = LoadFontEx("font/BotsmaticOutline-anZg.ttf", 64, 0, 0);
+    Font font = LoadFontEx("font/BotsmaticDemo-MXOr.ttf", 64, 0, 0);
 
     Game game = Game();
 
@@ -33,6 +33,7 @@ int main()
         BeginDrawing();
         ClearBackground(darkBlue);
         DrawTextEx(font, "score", {365, 15}, 38, 2, WHITE);
+        DrawRectangleRounded({320, 55, 170, 60}, 0.3, 6, lightBlue);
         game.Draw();
 
         EndDrawing();
