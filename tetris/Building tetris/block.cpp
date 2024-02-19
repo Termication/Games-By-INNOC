@@ -39,3 +39,9 @@ void Block::rotate(){
         rotationState = 0;
     }
 }
+void Block::UndoRotation(){
+    rotationState --;
+    if(rotationState == -1){
+        rotationState == cells.size() - 1;
+    }
+}

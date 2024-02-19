@@ -80,4 +80,7 @@ bool Game::IsBlockOutside(){
 }
 void Game::RotateBlock(){
     currentBlock.rotate();
+    if(IsBlockOutside()){
+        currentBlock.UndoRotation();
+    }
 }
