@@ -51,3 +51,12 @@ bool Grid::IsCellEmpty(int row, int column){
     }
     return false;
 }
+
+bool Grid::IsRowFull(int row){
+    for (int column = 0; column < numCols; column++){
+        if(grid[row][column] == 0){
+            return false;
+        }
+    }
+    return true;
+}

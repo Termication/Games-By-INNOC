@@ -15,6 +15,7 @@ public:
     int grid[20][10];
 
 private:
+    bool IsRowFull(int row);
     int numRows;
     int numCols;
     int cellSize;
