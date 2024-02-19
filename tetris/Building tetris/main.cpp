@@ -32,6 +32,7 @@ int main()
         }
         BeginDrawing();
         ClearBackground(darkBlue);
+        DrawTextEx(font, "score", {365, 15}, 38, 2, WHITE);
         game.Draw();
 
         EndDrawing();
