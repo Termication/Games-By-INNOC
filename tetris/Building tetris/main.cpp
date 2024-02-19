@@ -21,6 +21,8 @@ int main()
     InitWindow(500, 620, "Tetris By INN.");
     SetTargetFPS(60);
 
+    Font font = LoadFontEx("font/BotsmaticOutline-anZg.ttf", 64, 0, 0);
+
     Game game = Game();
 
     while (!WindowShouldClose()) {
