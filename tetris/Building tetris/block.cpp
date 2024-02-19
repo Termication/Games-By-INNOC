@@ -6,8 +6,8 @@ Block::Block()
     cellSize = 30;
     rotationState = 0;
     colors = GetCellColors();
-    int rowOffset = 0;
-    int columnOffset = 0;
+    rowOffset = 0;
+    columnOffset = 0;
 
 }
 

@@ -1,12 +1,13 @@
 #pragma once
 #include "grid.h"
-#include "block.cpp"
+#include "blocks.cpp"
 
 class Game{
 public:
     Game();
     Block GetRandomBlock();
     std::vector<Block> GetAllBlocks();
+    void Draw();
     Grid grid;
 
 private:

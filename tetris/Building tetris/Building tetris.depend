@@ -1,9 +1,8 @@
 # depslib dependency file v1.0
-1708263946 source:/home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/main.cpp
+1708318865 source:/home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/main.cpp
 	<iostream>
 	<raylib.h>
-	"grid.h"
-	"blocks.cpp"
+	"game.h"
 
 1708259075 /home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/grid.h
 	<vector>
@@ -42,4 +41,15 @@
 1708264049 /home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/blocks.cpp
 	"block.h"
 	"position.h"
+
+1708319126 /home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/game.h
+	"grid.h"
+	"blocks.cpp"
+
+1708262895 /home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/block.cpp
+	"block.h"
+
+1708319402 source:/home/innocent/Documents/GAME/Games-By-INNOC/tetris/Building tetris/game.cpp
+	"game.h"
+	<cstdlib>
 
