@@ -14,8 +14,15 @@ class Ball{
     }
 
     void Update(){
-    x += speed_x;
-    y += speed_y;
+        x += speed_x;
+        y += speed_y;
+
+        if (y + radius >= GetScreenHeight() || y - radius <= 0){
+            speed_y *= - 1;
+        }
+        if(x + radius >= GetScreenWidth() || x - radius <= 0){
+            speed_x *= -1;
+        }
     }
 };
 
