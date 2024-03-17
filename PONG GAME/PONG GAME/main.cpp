@@ -24,11 +24,21 @@ class Ball{
             speed_y *= - 1;
         }
 
-        if(x + radius >= GetScreenWidth()) { ai_score ++;}
+        if(x + radius >= GetScreenWidth()) { ai_score ++; ResetBall();}
 
         if(x - radius <= 0){
             play_score++;
+            ResetBall();
         }
+    }
+
+    void ResetBall(){
+        x = GetScreenWidth()/2;
+        y = GetScreenHeight()/2;
+
+        int speed_choices[2] = {-1,1};
+        speed_x *= speed_choices[GetRandomValue(0,1)];
+        speed_y *= speed_choices[GetRandomValue(0,1)];
     }
 };
 
@@ -135,6 +145,8 @@ int main()
          ball.Draw();
          ai.Draw();
          player.Draw();
+         DrawText(TextFormat("%i", ai_score), screen_width/4 - 20, 20, 80, WHITE);
+         DrawText(TextFormat("%i", play_score), 3 * screen_width/4 - 20, 20, 80, WHITE);
 
 
          EndDrawing();
