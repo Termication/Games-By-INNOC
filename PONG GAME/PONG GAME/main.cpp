@@ -3,11 +3,13 @@
 
 using namespace std;
 
+//colours
 Color Green = Color{38, 185, 154, 255};
 Color red = Color{240, 20, 10, 5};
 Color Lightred = Color{255, 80, 20, 25};
 Color yellow = Color{243, 213, 91, 255};
 
+//score global values
 int play_score = 0;
 int ai_score = 0;
 
