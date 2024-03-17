@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="Building tetris" />
+		<Option title="PONG GAME" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/Building tetris" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/PONG GAME" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/Building tetris" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/PONG GAME" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -32,18 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="block.cpp" />
-		<Unit filename="block.h" />
-		<Unit filename="blocks.cpp" />
-		<Unit filename="colors.cpp" />
-		<Unit filename="colors.h" />
-		<Unit filename="game.cpp" />
-		<Unit filename="game.h" />
-		<Unit filename="grid.cpp" />
-		<Unit filename="grid.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="position.cpp" />
-		<Unit filename="position.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
