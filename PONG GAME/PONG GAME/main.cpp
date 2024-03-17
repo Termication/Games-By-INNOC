@@ -55,9 +55,17 @@ class Paddle{
 };
 
 class AiPaddle : public Paddle{
+ public:
+    void Update(int ball_y){
 
+        if(y + height/2 > ball_y){
+            y = y - speed;
+        }
+        if(y + height/2 <= ball_y){
+            y = y + speed;
+        }
+    }
 };
-
 Ball ball;
 Paddle player;
 AiPaddle ai;
@@ -96,8 +104,11 @@ int main()
     while (WindowShouldClose() == false)
     {
          BeginDrawing();
+         // updating methods
          ball.Update();
          player.Update();
+         ai.Update(ball.y);
+
          ClearBackground(BLACK);
 
          // drawing
