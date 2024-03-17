@@ -54,8 +54,13 @@ class Paddle{
 
 };
 
+class AiPaddle : public Paddle{
+
+};
+
 Ball ball;
 Paddle player;
+AiPaddle ai;
 
 int main()
 {
@@ -80,6 +85,14 @@ int main()
     player.y = screen_height/2 - player.height/2;
     player.speed = 6;
 
+    //ai
+
+    ai.height = 120;
+    ai.width = 25;
+    ai.x = 10;
+    ai.y = screen_height/2 - ai.height/2;
+    ai.speed = 6;
+
     while (WindowShouldClose() == false)
     {
          BeginDrawing();
@@ -90,7 +103,7 @@ int main()
          // drawing
          DrawLine(screen_width/2, 0, screen_width/2, screen_height, WHITE);
          ball.Draw();
-         DrawRectangle(10,screen_height/ 2 - 60,25,120, WHITE);
+         ai.Draw();
          player.Draw();
 
 
