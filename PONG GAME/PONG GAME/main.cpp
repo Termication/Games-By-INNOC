@@ -3,6 +3,9 @@
 
 using namespace std;
 
+int play_score = 0;
+int ai_score = 0;
+
 class Ball{
   public:
     float x, y;
@@ -20,8 +23,11 @@ class Ball{
         if (y + radius >= GetScreenHeight() || y - radius <= 0){
             speed_y *= - 1;
         }
-        if(x + radius >= GetScreenWidth() || x - radius <= 0){
-            speed_x *= -1;
+
+        if(x + radius >= GetScreenWidth()) { ai_score ++;}
+
+        if(x - radius <= 0){
+            play_score++;
         }
     }
 };
