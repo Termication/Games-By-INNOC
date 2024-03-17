@@ -36,6 +36,15 @@ class Paddle{
         DrawRectangle(x,y,width,height, WHITE);
     }
 
+    void Update(){
+        if(IsKeyDown(KEY_UP)){
+            y = y - speed;
+        }
+        if(IsKeyDown(KEY_DOWN)){
+            y = y + speed;
+        }
+    }
+
 };
 
 Ball ball;
@@ -68,6 +77,7 @@ int main()
     {
          BeginDrawing();
          ball.Update();
+         player.Update();
          ClearBackground(BLACK);
 
          // drawing
