@@ -9,6 +9,13 @@ int main()
     int windowHeight = 700;
 
     InitWindow(windowWidth, windowHeight, "Space Invaders by INN");
+    SetTargetFPS(60);
+
+    while(WindowShouldClose() == false){
+
+        BeginDrawing();
+        EndDrawing();
+    }
 
 
     CloseWindow();
