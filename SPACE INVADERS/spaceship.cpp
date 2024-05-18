@@ -4,8 +4,8 @@
 Spaceship::Spaceship()
 {
     image = LoadTexture("Graphics/spaceship.png");
-    position.y = 100;
-    position.x = 100;
+    position.x = (GetScreenWidth() - image.width)/2;
+    position.y = GetScreenHeight() - image.height;
 }
 
 Spaceship::~Spaceship()

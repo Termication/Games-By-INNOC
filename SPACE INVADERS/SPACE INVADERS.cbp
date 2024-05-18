@@ -33,6 +33,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
+		<Unit filename="spaceship.cpp" />
+		<Unit filename="spaceship.hpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
