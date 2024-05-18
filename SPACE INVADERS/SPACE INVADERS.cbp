@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="game.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="spaceship.cpp" />
 		<Unit filename="spaceship.hpp" />
