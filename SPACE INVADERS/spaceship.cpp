@@ -1,6 +1,7 @@
 #include "spaceship.hpp"
 #include <raylib.h>
 
+
 Spaceship::Spaceship()
 {
     image = LoadTexture("Graphics/spaceship.png");
@@ -32,4 +33,8 @@ void Spaceship::MoveRight(){
     if(position.x > GetScreenWidth() - image.width){
         position.x = GetScreenWidth() - image.width;
     }
+}
+
+void Spaceship::FireLaser(){
+
 }

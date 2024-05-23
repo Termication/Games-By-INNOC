@@ -1,12 +1,14 @@
 # depslib dependency file v1.0
-1716474744 source:/home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/main.cpp
+1716475315 source:/home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/main.cpp
 	<iostream>
 	<raylib.h>
 	"game.hpp"
 	"fire.hpp"
 
-1715600164 /home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/spaceship.hpp
+1716475637 /home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/spaceship.hpp
 	<raylib.h>
+	"fire.hpp"
+	<vector>
 
 1716473474 source:/home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/spaceship.cpp
 	"spaceship.hpp"
@@ -18,8 +20,9 @@
 1716472471 /home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/game.hpp
 	"spaceship.hpp"
 
-1716474715 source:/home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/fire.cpp
+1716475130 source:/home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/fire.cpp
 	"fire.hpp"
+	<iostream>
 
 1716475130 /home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/fire.hpp
 	<raylib.h>

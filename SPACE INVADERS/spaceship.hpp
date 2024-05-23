@@ -1,5 +1,7 @@
 #pragma once
 #include <raylib.h>
+#include "fire.hpp"
+#include <vector>
 
 class Spaceship{
     public:
@@ -9,6 +11,8 @@ class Spaceship{
         void MoveRight();
         void MoveLeft();
         void FireLaser();
+        std::vector<Fire> fires;
+
 
     private:
         Texture2D image;
