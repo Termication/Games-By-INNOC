@@ -16,11 +16,12 @@ int main()
     SetTargetFPS(60);
 
     Game game;
-    Fire fire = Fire({100, 100}, 7);
+    Fire fire = Fire({100, 100}, -7);
 
     while(WindowShouldClose() == false){
 
         game.HandleInput();
+        fire.Update();
 
         BeginDrawing();
         ClearBackground(grey);
