@@ -11,6 +11,7 @@ Game::~Game()
 }
 
 void Game::Update(){
+// moving of the fired laser
     for(auto& fire: spaceship.fires){
         fire.Update();
     }
