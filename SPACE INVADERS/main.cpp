@@ -1,6 +1,7 @@
 #include <iostream>
 #include <raylib.h>
 #include "game.hpp"
+#include "fire.hpp"
 
 
 using namespace std;
@@ -15,6 +16,7 @@ int main()
     SetTargetFPS(60);
 
     Game game;
+    Fire fire = Fire({100, 100}, 7);
 
     while(WindowShouldClose() == false){
 
@@ -24,6 +26,7 @@ int main()
         ClearBackground(grey);
 
         game.Draw();
+        fire.Draw();
 
         EndDrawing();
     }

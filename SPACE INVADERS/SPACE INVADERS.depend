@@ -17,3 +17,9 @@
 1716472471 /home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/game.hpp
 	"spaceship.hpp"
 
+1716474474 source:/home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/fire.cpp
+	"fire.hpp"
+
+1716474186 /home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/fire.hpp
+	<raylib.h>
+

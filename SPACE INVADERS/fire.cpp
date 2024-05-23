@@ -6,5 +6,5 @@ Fire::Fire(Vector2 position, int speed){
 }
 
 void Fire::Draw(){
-    DrawRectangle()
+    DrawRectangle(position.x, position.y, 4, 15, {243, 216, 63, 255});
 }
