@@ -10,8 +10,18 @@ Game::~Game()
 {
 }
 
+void Game::Update(){
+    for(auto& fire: spaceship.fires){
+        fire.Update();
+    }
+}
+
 void Game::Draw(){
     spaceship.Draw();
+
+    for(auto& fire: spaceship.fires){
+        fire.Draw();
+    }
 }
 
 void Game::HandleInput(){
