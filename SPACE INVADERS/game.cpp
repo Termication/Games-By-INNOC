@@ -19,5 +19,7 @@ void Game::HandleInput(){
         spaceship.MoveLeft();
     } else if(IsKeyDown(KEY_RIGHT)){
         spaceship.MoveRight();
+    } else if(IsKeyDown(KEY_SPACE)){
+        spaceship.FireLaser();
     }
 }
