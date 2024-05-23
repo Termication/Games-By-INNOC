@@ -36,5 +36,5 @@ void Spaceship::MoveRight(){
 }
 
 void Spaceship::FireLaser(){
-
+    fires.push_back(Fire({position.x + image.width/2 - 2, position.y}, -6));
 }
