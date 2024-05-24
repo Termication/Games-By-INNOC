@@ -20,7 +20,7 @@ void Fire::Update(){
         if(position.y > GetScreenHeight() || position.y < 0){
             active == false;
             // test fire deactive
-            std::cout << "fire deactive" << std::endl;
+            //std::cout << "fire deactive" << std::endl;
         }
     }
 }
