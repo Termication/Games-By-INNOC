@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="block.cpp" />
+		<Unit filename="block.hpp" />
 		<Unit filename="fire.cpp" />
 		<Unit filename="fire.hpp" />
 		<Unit filename="game.cpp" />
