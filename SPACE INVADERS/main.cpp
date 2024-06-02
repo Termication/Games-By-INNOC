@@ -14,6 +14,7 @@ int main()
     InitWindow(windowWidth, windowHeight, "Space Invaders by INN");
     SetTargetFPS(60);
 
+    //Main Game loop
     while(WindowShouldClose() == false){
 
         BeginDrawing();
