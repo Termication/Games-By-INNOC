@@ -48,3 +48,7 @@ void Game::DeleteInactiveFire()
         }
     }
 }
+
+std::vector<Obstacle> Game::CreateObstacles(){
+
+}

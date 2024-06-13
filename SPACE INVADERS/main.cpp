@@ -1,6 +1,5 @@
 #include <iostream>
 #include <raylib.h>
-#include "Obstacle.hpp"
 #include "game.hpp"
 
 using namespace std;
@@ -17,7 +16,6 @@ int main()
     SetTargetFPS(60);
 
     Game game;
-    Obstacle obstacle = Obstacle({100, 100});
 
     //Main Game loop
     while(WindowShouldClose() == false){
@@ -27,7 +25,7 @@ int main()
         BeginDrawing();
         ClearBackground(grey);
         game.Draw();
-        obstacle.Draw();
+
 
         EndDrawing();
     }
