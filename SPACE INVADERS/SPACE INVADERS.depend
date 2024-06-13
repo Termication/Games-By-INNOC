@@ -28,3 +28,16 @@
 1716475130 /home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/fire.hpp
 	<raylib.h>
 
+1716625220 source:/home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/block.cpp
+	"block.hpp"
+
+1716625220 /home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/block.hpp
+	<raylib.h>
+
+1718285640 source:/home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/Obstacle.cpp
+	"Obstacle.hpp"
+
+1718284364 /home/innocent/Documents/GAME/Games-By-INNOC/SPACE INVADERS/Obstacle.hpp
+	<vector>
+	"block.hpp"
+
