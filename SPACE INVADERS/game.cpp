@@ -25,6 +25,10 @@ void Game::Draw(){
     for(auto& fire: spaceship.fires){
         fire.Draw();
     }
+
+    for(auto& obstacle : obstacles){
+        obstacle.Draw();
+    }
 }
 
 void Game::HandleInput(){
